@@ -1,0 +1,4 @@
+# Created by .gitignore support plugin (hsz.mobi)
+.idea
+java-adsb-receiver.iml
+dependency-reduced-pom.xml
