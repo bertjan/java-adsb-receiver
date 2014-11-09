@@ -1,16 +1,19 @@
 java-adsb-receiver
 ==================
 
-Simple ADS-B receiver in Java and JavaScript, using the Google Maps API.
-Depends on 'dump1090' by Salvatore Sanfilippo: https://github.com/antirez/dump1090.
+Simple ADS-B receiver in Java and JavaScript, using the Google maps API.
+This project depends on 'dump1090' by Salvatore Sanfilippo: https://github.com/antirez/dump1090.
  
 Background
 ---
-See the following presentation:
+Using a compatible RTL-SDR usb stick (cost < $10) and this project, you'll be able to receive and decode signals 
+from ADS-B transponders installed in commercial airliners and plot flight paths on Google maps.
+
+For a more in-depth introduction, see the following presentation:
 * http://www.slideshare.net/BertJanSchrijver/jfall-2014-decoding-the-airspace-above-you-with-java-and-7-hardware
 
 Difference between the setup in the presentation and this project: this project depends on dump1090
-as input source for the ADS-B data.
+as an input source for the ADS-B data. 
 
 Dependencies
 ---
