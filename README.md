@@ -2,22 +2,23 @@ java-adsb-receiver
 ==================
 
 Simple ADS-B receiver in Java and JavaScript, using the Google Maps API.
-Depends on 'dump1090' by Salvatore Sanfilippo: antirez/dump1090.
+Depends on 'dump1090' by Salvatore Sanfilippo: https://github.com/antirez/dump1090.
  
 Background
 ---
 See the following presentation:
 * http://www.slideshare.net/BertJanSchrijver/jfall-2014-decoding-the-airspace-above-you-with-java-and-7-hardware
+
 Difference between the setup in the presentation and this project: this project depends on dump1090
 as input source for the ADS-B data.
 
 Dependencies
 ---
-- Java 8
+- Java 8, maven 3
 - MongoDB
 - Running dump1090 client on the network
 - Compatible RTL-SDR device
-- Preferably: tailor-made ADS-B antenna connected to the RTL-SDR device
+- Preferably: tailor-made ADS-B antenna connected to the RTL-SDR device (see https://github.com/antirez/dump1090#antenna)
 
 RTL-SDR devices
 ---
@@ -47,8 +48,10 @@ Getting started
 ```
 * Verify that the dump1090 data API is reachable over HTTP (http://localhost:8080/data.json)
 * Edit Config.java, set URL to dump1090 API accordingly
-* Build and run this project:
-    mvn clean verify
+* Build and run java-adsb-receiver
+```
+mvn clean verify
+```
 * The frontend should come up at http://localhost:1090
 
 
